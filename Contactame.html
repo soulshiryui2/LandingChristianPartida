@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctame - Mi Sitio Personal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+    <header>
+        <img src="tu_logo.png" alt="Tu Logo" width="20px" height="25px">
+        <h1>Contáctame</h1>
+    </header>
+
+  
+    <nav>
+        <ul>
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="Horario.html">Horario</a></li>
+            <li><a href="Descripcion.html">Descripción de Cursos</a></li>
+            <li><a href="Aficiones.html">Aficiones</a></li>
+            <li><a href="Contactame.html">Contáctame</a></li>
+        </ul>
+    </nav>
+
+  
+    <main>
+        <h2>Formulario de Contacto</h2>
+        <p>Por favor, completa el siguiente formulario para ponerse en contacto conmigo:</p>
+
+       
+        <form action="procesar_formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="ocupacion">Ocupación:</label>
+            <input type="text" id="ocupacion" name="ocupacion">
+
+            <label for="aficiones">Aficiones:</label>
+            <select id="aficiones" name="aficiones" multiple>
+                <option value="VideoJuegos">Lectura</option>
+                <option value="musica">Música</option>
+                <option value="otros">Otros</option>
+            </select>
+
+            <label>Preferencias de contacto:</label>
+            <input type="radio" id="contacto_email" name="preferencias" value="email">
+            <label for="contacto_email">E-mail</label>
+            <input type="radio" id="contacto_telefono" name="preferencias" value="telefono">
+            <label for="contacto_telefono">Teléfono</label>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+        </form>
+    </main>
+
+    
+    <footer>
+        <p>Diseñado por [Christian Partida]</p>
+        <p>Contacto: [linkedin/christianpartida]</p>
+    </footer>
+</body>
+</html>
